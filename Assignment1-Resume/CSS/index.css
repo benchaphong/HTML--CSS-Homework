@@ -4,41 +4,38 @@
     box-sizing: border-box;
 }
 
-body {
-    height: 100vh;
+body, html {
+    height: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-direction: column;
 }
 
 .container {
-    flex: 1;
     display: flex;
-    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
 }
 
 .part1 {
     width: 50%;
-    background-color: #D17762;
+    background-color: #b84c39; 
     color: white;
-    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
 }
 
 .part2 {
     width: 50%;
-}
-
-footer {
-    background-color: white;
-    height: 50px;
-    width: 100%;
-}
-
-ul {
-    padding-left: 20px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px 50px;
+    overflow-y: auto;
 }
 
 .profile {
-    text-align: center;
+    align-items: center;
 }
 
 .img_profile {
@@ -47,29 +44,113 @@ ul {
 }
 
 .icon {
-    padding-left: 50px;
+    margin-top: 30px;
 }
 
-.phone, 
-.email,
-.location {
+.icon div {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
-.icon_phone,
-.icon_email,
-.icon_location {
-    width: 30px;
-    height: 30px;
+.icon img {
+    width: 20px;
+    margin-right: 10px;
 }
 
-.education {
-    height: 50px;
-}
-
-.title_education {
-    background-color: red;
+.education,
+.skill {
+    padding: 40px 0;
     width: 80%;
-    float: right;;
+    float: right;
+    margin-left: auto
+}
+
+.title_education,
+.title_skill {
+    background-color: #8B4C39;
+    color: white;
+    padding: 20px;
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.education p,
+.data_skill {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.name {
+    padding-top: 20px;
+}
+
+.name p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.student ,
+.work ,
+.activity {
+    padding-top: 50px;
+    width: 80%;
+}
+
+.title_student ,
+.title_work ,
+.title_activity {
+    background-color: #8B4C39;
+    color: white;
+    padding: 20px;
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.title_student2 {
+    padding-left: 40px;
+    margin-top: 50px;
+    color: #b84c39;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.data_student {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.work h3 {
+    color: #b84c39;
+    padding-top: 20px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.data_work1 ,
+.data_work2 ,
+.data_activity{
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+
+footer {
+    background-color: white;
+    color: #b84c39;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .contact img {
+    width: 20px;
 }
